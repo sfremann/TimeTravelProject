@@ -2,6 +2,8 @@
 
 *Winter 2023*
 
+![image](ReadMeResources/Preview.png)
+
 ## Concept
 
 The project *TimeTravel* was developed as part of a research project between our university *Université de Technologie de Compiègne* and the memorial of Compiègne. The idea was to reconstruct in 3D and XR the history of this place through a virtual visit that could allow the users to see the place evolve and change with time. During the winter semester of 2023, we were able to test different approaches and finally be able to create an experience including four periods: 
