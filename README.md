@@ -23,43 +23,66 @@ The project *TimeTravel* was developed as part of a research project between our
 
 ---
 
+## How to use
+
+### ◻️ Gameplay
+
+The game is developed for Windows using a mouse and a keyboard. 
+  
+You can move inside the game using `ZQSD`. You can reorient the camera with the mouse. 
+
+If you move inside a green or yellow glowing circle you will be able to listen to some historical information. If the voice stops and you move out of the circle it will turn blue, meaning there is nothing left to listen in this zone. If you step out of the circle while the audio is playing the circle will remain yellow, meaning you can get inside again to finish the audio you started. A green zone is a zone you have never been in yet. Once all zones are either yellow or blue you can come closer to the picture close to the window and move to the next period.
+
+Press `Esc` to quit the application.
+
+### ◻️ Modifying the project
+
+The project is built in a modular way so it is relatively easy to add more periods, remove periods, modify periods, etc... 
+
+![image](ReadMeResources/PeriodManager.png)
+
+The *`PeriodManager`* manages the implemented periods. You can add or remove a period here. For a new period to work properly you will need to make sure the new period has the right architecture.
+
+![image](ReadMeResources/RenderSettingsManager.png)
+
+For each period a *`RenderSettingsManager`* handles the information / audio zones in this period. You can add or remove one. All zones have the same structure from the prefab *`InfoZone`*, you only need to select the right audio and place the zone in the room.
+
+![image](ReadMeResources/PeriodIntroduction.png)
+
+Each period contains an introductory audio activated upon arrival in the period.
+
 ## Credits
 
-- Sarah Frémann (https://github.com/sfremann) 
-- Anaïs Bourguignon (https://github.com/plinkakko)
+- [Sarah Frémann](https://github.com/sfremann)
+- [Anaïs Bourguignon](https://github.com/plinkakko)
 
-<details>
-  <summary>Details</summary>
+### ◻️ Design & Writing
 
-  ### Design & Writing
-  
-  - Scenario: Sarah Frémann & Anaïs Bourguignon
-  - Dialogue: Sarah Frémann
-  - Historical research: Sarah Frémann & Anaïs Bourguignon
+- Scenario: Sarah Frémann & Anaïs Bourguignon
+- Dialogue: Sarah Frémann
+- Historical research: Sarah Frémann & Anaïs Bourguignon
 
-  ### Programming & Engineering
-  
-  - Gameplay: Sarah Frémann
-  - Environment behavior: Sarah Frémann
-  - Putting things together/ Solving conflict: mostly Sarah Frémann with help from Anaïs Bourguignon
-  - Testing/ Debug: mostly Sarah Frémann with help from Anaïs Bourguignon
-  
-  ### Visuals
-  
-  - Effects & transitions / shaders: Sarah Frémann
-  - Models & environment: Anaïs Bourguignon
+### ◻️ Programming & Engineering
 
-  ![image](ReadMeResources/Shader.png)
-  
-  ### Audio 
-  
-  - Sound selection: Sarah Frémann & Anaïs Bourguignon
-  - Effects & transitions: Sarah Frémann
-  - Voice & recording: Sarah Frémann
+- Gameplay: Sarah Frémann
+- Environment behavior: Sarah Frémann
+- Putting things together/ Solving conflict: mostly Sarah Frémann with help from Anaïs Bourguignon
+- Testing/ Debug: mostly Sarah Frémann with help from Anaïs Bourguignon
 
-  ![image](ReadMeResources/SoundZones.png)
+### ◻️ Visuals
 
-</details>
+- Effects & transitions / shaders: Sarah Frémann
+- Models & environment: Anaïs Bourguignon
+
+![image](ReadMeResources/Shader.png)
+
+### ◻️ Audio 
+
+- Sound selection: Sarah Frémann & Anaïs Bourguignon
+- Effects & transitions: Sarah Frémann
+- Voice & recording: Sarah Frémann
+
+![image](ReadMeResources/SoundZones.png)
 
 <details>
   <summary>Technologies & resources</summary>
@@ -73,37 +96,3 @@ The project *TimeTravel* was developed as part of a research project between our
 > Most sounds except for the voice are free-to-use assets we found on Pixabay. A few extra models are free-to-use assets we found on Sketchfab or Unity Asset Store, but most models were made by Anaïs Bourguignon.
 
 ---
-
-## How to use
-
-<details>
-  <summary>Gameplay</summary>
-
-  The game is developed for Windows using a mouse and a keyboard. 
-  
-  You can move inside the game using ZQSD. You can reorient the camera with the mouse. 
-  
-  If you move inside a green or yellow glowing circle you will be able to listen to some historical information. If the voice stops and you move out of the circle it will turn blue, meaning there is nothing left to listen in this zone. If you step out of the circle while the audio is playing the circle will remain yellow, meaning you can get inside again to finish the audio you started. A green zone is a zone you have never been in yet. Once all zones are either yellow or blue you can come closer to the picture close to the window and move to the next period.
-  
-  Press Esc to quit the application.
-
-</details>
-
-<details>
-  <summary>Modifying the project</summary>
-
-  The project is built in a modular way so it is relatively easy to add more periods, remove periods, modify periods, etc... 
-
-  ![image](ReadMeResources/PeriodManager.png)
-
-  The *PeriodManager* manages the implemented periods. You can add or remove a period here. For a new period to work properly you will need to make sure the new period has the right architecture.
-
-  ![image](ReadMeResources/RenderSettingsManager.png)
-
-  For each period a *RenderSettingsManager* handles the information / audio zones in this period. You can add or remove one. All zones have the same structure from the prefab *InfoZone*, you only need to select the right audio and place the zone in the room.
-
-  ![image](ReadMeResources/PeriodIntroduction.png)
-
-  Each period contains an introductory audio activated upon arrival in the period.
-
-</details>
