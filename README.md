@@ -19,7 +19,7 @@ The project *TimeTravel* was developed as part of a research project between our
 > Being a university project this experience is not 100% finished nor optimised. The historical information might not be always accurate, think of it as a POC more than a finished product.
 
 > [!NOTE] 
-> XR version for Oculus Meta Quest 3: https://github.com/sfremann/TimeTravelProjectXR
+> XR version for Oculus Meta Quest 3: [*TimeTravelProjectXR*](https://github.com/sfremann/TimeTravelProjectXR)
 
 ---
 
